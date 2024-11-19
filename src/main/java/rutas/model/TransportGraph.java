@@ -24,8 +24,17 @@ public class TransportGraph {
         if (graph.getEdge(id) == null) {
             Edge edge = graph.addEdge(id, source, target, true);
             edge.setAttribute("weight", weight);
-            edge.setAttribute("ui.label", weight);
             edge.setAttribute("ui.style", "fill-color: gray; size: 2px; text-size: 20px;");
+
+            boolean isReverse = graph.getEdge(target + "-" + source) != null;
+
+            if (isReverse) {
+                // Reverse
+                edge.setAttribute("ui.label", "      - " + weight);
+            } else {
+                // Normal
+                edge.setAttribute("ui.label", weight);
+            }
         }
     }
 
