@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "rutas.runner.Main",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "rutas.runner.Main",
+            "projectName": "rutas"
+        },
+        {
+            "type": "java",
+            "name": "Launch",
+            "request": "launch",
+            "mainClass": "${fileBasename}"
+        }
+    ]
+}
