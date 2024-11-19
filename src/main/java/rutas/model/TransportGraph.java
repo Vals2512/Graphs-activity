@@ -15,8 +15,8 @@ public class TransportGraph {
     public void addNode(String id) {
         if (graph.getNode(id) == null) {
             Node node = graph.addNode(id);
-            node.setAttribute("ui.label", id);
-            node.setAttribute("ui.style", "fill-color: blue; size: 20px;");
+            node.setAttribute("ui.label", id + " \uD83D\uDE8D");
+            node.setAttribute("ui.style", "fill-color: blue; size: 20px; text-size: 20px;");
         }
     }
 
@@ -25,7 +25,7 @@ public class TransportGraph {
             Edge edge = graph.addEdge(id, source, target, true);
             edge.setAttribute("weight", weight);
             edge.setAttribute("ui.label", weight);
-            edge.setAttribute("ui.style", "fill-color: gray; size: 2px;");
+            edge.setAttribute("ui.style", "fill-color: gray; size: 2px; text-size: 20px;");
         }
     }
 
