@@ -19,14 +19,14 @@
         <dependency>
             <groupId>org.graphstream</groupId>
             <artifactId>gs-core</artifactId>
-            <version>2.0</version>
+            <version>1.3</version>
         </dependency>
 
         <!-- GraphStream Algorithm Library -->
         <dependency>
             <groupId>org.graphstream</groupId>
             <artifactId>gs-algo</artifactId>
-            <version>2.0</version>
+            <version>1.3</version>
         </dependency>
 
         <!-- GraphStream UI Library (for Visualization) -->

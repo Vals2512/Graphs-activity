@@ -9,6 +9,7 @@ public class Main {
         System.setProperty("org.graphstream.ui", "swing"); 
 
         TransportGraph graph = new TransportGraph();
+
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
 
