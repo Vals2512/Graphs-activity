@@ -30,7 +30,7 @@ public class TransportGraph {
 
             if (isReverse) {
                 // Reverse
-                edge.setAttribute("ui.label", "      - " + weight);
+                edge.setAttribute("ui.label", "       - " + weight);
             } else {
                 // Normal
                 edge.setAttribute("ui.label", weight);
